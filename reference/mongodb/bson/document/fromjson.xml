@@ -34,11 +34,23 @@
   </variablelist>
  </refsect1>
 
+ <refsect1 role="returnvalues">
+  &reftitle.returnvalues;
+  <para>
+   Returns a new <classname>MongoDB\BSON\Document</classname> instance.
+  </para>
+ </refsect1>
+
  <refsect1 role="errors">
   &reftitle.errors;
   <simplelist>
    &mongodb.throws.argumentparsing;
-   <member>Throws <classname>MongoDB\Driver\Exception\UnexpectedValueException</classname> if <parameter>json</parameter> is not a valid document.</member>
+   <member>
+    Throws
+    <classname>MongoDB\Driver\Exception\UnexpectedValueException</classname> if
+    the JSON value cannot be converted to a BSON document (e.g. due to a syntax
+    error).
+   </member>
   </simplelist>
  </refsect1>
 
@@ -47,7 +59,6 @@
   <simplelist>
    <member><methodname>MongoDB\BSON\Document::fromPHP</methodname></member>
    <member><methodname>MongoDB\BSON\Document::fromBSON</methodname></member>
-   <member><function>MongoDB\BSON\fromJSON</function></member>
    <member><link xlink:href="&url.mongodb.docs.extendedjson;">MongoDB Extended JSON</link></member>
    <member><link xlink:href="&url.mongodb.docs.bson;">BSON Types</link></member>
   </simplelist>

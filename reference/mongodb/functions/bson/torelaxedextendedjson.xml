@@ -7,6 +7,17 @@
   <refpurpose>Returns the Relaxed Extended JSON representation of a BSON value</refpurpose>
  </refnamediv>
 
+ <refsynopsisdiv>
+  <warning>
+   <para>
+    This function has been <emphasis>DEPRECATED</emphasis> as of extension
+    version 1.20.0 and will be removed in 2.0. Applications should use
+    <methodname>MongoDB\BSON\Document::toRelaxedExtendedJSON</methodname>
+    instead.
+   </para>
+  </warning>
+ </refsynopsisdiv>
+
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -126,7 +137,7 @@ foreach ($documents as $document) {
    <member><methodname>MongoDB\BSON\Document::toRelaxedExtendedJSON</methodname></member>
    <member><function>MongoDB\BSON\fromJSON</function></member>
    <member><function>MongoDB\BSON\toCanonicalExtendedJSON</function></member>
-   <member><link xlink:href="&url.mongodb.specs.extendedjson;">Extended JSON </link></member>
+   <member><link xlink:href="&url.mongodb.specs.extendedjson;">Extended JSON</link></member>
    <member><link xlink:href="&url.mongodb.docs.bson;">MongoDB BSON</link></member>
   </simplelist>
  </refsect1>

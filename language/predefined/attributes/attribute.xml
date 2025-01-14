@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<phpdoc:classref xml:id="class.attribute" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
- <title>The Attribute class</title>
+<reference xml:id="class.attribute" role="class" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+ <title>The Attribute attribute</title>
  <titleabbrev>Attribute</titleabbrev>
 
  <partintro>
@@ -21,17 +21,11 @@
   <section xml:id="attribute.synopsis">
    &reftitle.classsynopsis;
 
-   <classsynopsis>
+   <classsynopsis class="class">
     <ooclass>
+     <modifier>final</modifier>
      <classname>Attribute</classname>
     </ooclass>
-
-    <classsynopsisinfo>
-     <ooclass>
-      <modifier>final</modifier>
-      <classname>Attribute</classname>
-     </ooclass>
-    </classsynopsisinfo>
 
     <classsynopsisinfo role="comment">&Constants;</classsynopsisinfo>
     <fieldsynopsis>
@@ -170,7 +164,7 @@
 
  &language.predefined.attribute.construct;
 
-</phpdoc:classref>
+</reference>
 <!-- Keep this comment at the end of the file
 Local variables:
 mode: sgml

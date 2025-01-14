@@ -99,6 +99,10 @@
  <function name="generator::valid" from="PHP 5 &gt;= 5.5.0, PHP 7, PHP 8"/>
  <function name="generator::__wakeup" from="PHP 5 &gt;= 5.5.0, PHP 7, PHP 8"/>
 
+ <function name="closedgeneratorexception" from="PHP 5 &gt;= 5.5.0, PHP 7, PHP 8"/>
+
+ <function name="requstparsebodyexception" from="PHP 8 &gt;= 8.4.0"/>
+
  <function name="fiber" from="PHP 8 &gt;= 8.1.0"/>
  <function name="fiber::__construct" from="PHP 8 &gt;= 8.1.0"/>
  <function name="fiber::start" from="PHP 8 &gt;= 8.1.0"/>
@@ -173,6 +177,11 @@
  <function name="SensitiveParameterValue::__construct" from="PHP 8 &gt;= 8.2.0"/>
  <function name="SensitiveParameterValue::__debugInfo" from="PHP 8 &gt;= 8.2.0"/>
  <function name="SensitiveParameterValue::getValue" from="PHP 8 &gt;= 8.2.0"/>
+ <function name="Override" from="PHP 8 &gt;= 8.3.0"/>
+ <function name="Override::__construct" from="PHP 8 &gt;= 8.3.0"/>
+ <function name="Deprecated" from="PHP 8 &gt;= 8.4.0"/>
+ <function name="Deprecated::__construct" from="PHP 8 &gt;= 8.4.0"/>
+ <function name="__PHP_Incomplete_Class" from="PHP 4 &gt;=4.0.1, PHP 5, PHP 7, PHP 8"/>
 </versions>
 <!-- Keep this comment at the end of the file
 Local variables:

@@ -9,7 +9,7 @@
   &reftitle.description;
   <methodsynopsis role="ZipArchive">
    <modifier>public</modifier> <type>int</type><methodname>ZipArchive::getArchiveFlag</methodname>
-   <methodparam><type>int</type><parameter>flag</parameter><initializer>0</initializer></methodparam>
+   <methodparam><type>int</type><parameter>flag</parameter></methodparam>
    <methodparam choice="opt"><type>int</type><parameter>flags</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
   <para>
@@ -29,22 +29,22 @@
        <itemizedlist>
         <listitem>
          <para>
-          <constant><link linkend="ziparchive.constants.afl-rdonly">ZipArchive::AFL_RDONLY</link></constant>
+          <constant>ZipArchive::AFL_RDONLY</constant>
          </para>
         </listitem>
         <listitem>
          <para>
-          <constant><link linkend="ziparchive.constants.afl-is-torrentzip">ZipArchive::AFL_IS_TORRENTZIP</link></constant>
+          <constant>ZipArchive::AFL_IS_TORRENTZIP</constant>
          </para>
         </listitem>
         <listitem>
          <para>
-          <constant><link linkend="ziparchive.constants.afl-want-torrentzip">ZipArchive::AFL_WANT_TORRENTZIP</link></constant>
+          <constant>ZipArchive::AFL_WANT_TORRENTZIP</constant>
          </para>
         </listitem>
         <listitem>
          <para>
-          <constant><link linkend="ziparchive.constants.afl-create-or-keep-file-for-empty-archive">ZipArchive::AFL_CREATE_OR_KEEP_FILE_FOR_EMPTY_ARCHIVE</link></constant>
+          <constant>ZipArchive::AFL_CREATE_OR_KEEP_FILE_FOR_EMPTY_ARCHIVE</constant>
          </para>
         </listitem>
        </itemizedlist>
@@ -55,8 +55,8 @@
      <term><parameter>flags</parameter></term>
      <listitem>
       <para>
-       If flags is set to <constant>ZipArchive::FL_UNCHANGED</constant>, the original unchanged
-       flag is returned.
+       If <parameter>flags</parameter> is set to <constant>ZipArchive::FL_UNCHANGED</constant>,
+       the original unchanged flag is returned.
       </para>
      </listitem>
     </varlistentry>
@@ -78,13 +78,16 @@
    <programlisting role="php">
 <![CDATA[
 <?php
-$zip = new ZipArchive;
+
+$zip = new ZipArchive();
 $res = $zip->open('test.zip');
-if ($res === TRUE) {
+
+if ($res === true) {
     var_dump($zip->getArchiveFlag(ZipArchive::AFL_IS_TORRENTZIP));
 } else {
-    echo 'failed, code:' . $res;
+    echo 'Failed, code: ' . $res;
 }
+
 ?>
 ]]>
    </programlisting>

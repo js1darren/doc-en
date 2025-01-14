@@ -63,7 +63,7 @@
    &csprng.errors;
    <listitem>
     <simpara>
-     If <parameter>max</parameter> is less than <parameter>min</parameter>, an
+     If <parameter>max</parameter> is less than <parameter>min</parameter>, a
      <classname>ValueError</classname> will be thrown.
     </simpara>
    </listitem>
@@ -119,7 +119,7 @@ int(-898)
  <refsect1 role="seealso"><!-- {{{ -->
   &reftitle.seealso;
   <simplelist>
-   <member><function>Random\Randomizer::getInt</function></member>
+   <member><methodname>Random\Randomizer::getInt</methodname></member>
    <member><function>random_bytes</function></member>
   </simplelist>
  </refsect1><!-- }}} -->
